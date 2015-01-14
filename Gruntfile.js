@@ -58,8 +58,8 @@ module.exports = function (grunt) {
         tasks: ['wireDependencies']
       },
       js: {
-        files: ['app/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint:all']
+        files: ['app/js/{,*/}*.js'],
+        tasks: ['copy']
       },
       livereload: {
         options: { livereload: true },
