@@ -53,8 +53,8 @@ module.exports = function (grunt) {
           reload: true
         }
       },
-      js: {
-        files: ['app/js/{,*/}*.js'],
+      other: {
+        files: ['app/**', '!app/**/*.jade', '!app/partials/**', '!app/styles/**', '!app/scripts/**'],
         tasks: ['copy']
       },
       livereload: {
