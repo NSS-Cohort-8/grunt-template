@@ -78,7 +78,7 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-      {expand: true, cwd: 'app', src: ['**', '!**/*.jade', '!partials/**', '!styles/**', '!scripts/**'], dest: 'public'},
+          {expand: true, cwd: 'app', src: ['**', '!**/*.jade', '!partials/**', '!styles/**', '!scripts/**'], dest: 'public'},
           {expand: true, cwd: 'bower_components', src: ['**'], dest: 'public/vendor'}
         ]
       }
