@@ -35,11 +35,12 @@ module.exports = function (grunt) {
       options: {
         port: 3333,
         base: 'public',
-        hostname: 'localhost'
+        hostname: 'localhost',
+        useAvailablePort: true,
+        open: true
       },
       server: {
         options: {
-          open: true,
           livereload: true
         }
       }
