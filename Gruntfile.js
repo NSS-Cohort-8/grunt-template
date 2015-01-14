@@ -53,10 +53,6 @@ module.exports = function (grunt) {
           reload: true
         }
       },
-      bower: {
-        files: ['bower.json'],
-        tasks: ['wireDependencies']
-      },
       js: {
         files: ['app/js/{,*/}*.js'],
         tasks: ['copy']
