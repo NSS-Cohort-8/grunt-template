@@ -63,7 +63,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: { livereload: true },
-        files: ['public/**/*']
+        files: ['public/{,*/}*.{html,css,js}']
       },
       jade: {
         files: ['app/**/*.jade'],
