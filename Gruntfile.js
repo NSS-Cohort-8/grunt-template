@@ -73,7 +73,6 @@ module.exports = function (grunt) {
         files: ['app/styles/{,*/}*.{scss,sass}'],
         tasks: ['sass']
       }
-
     },
     copy: {
       main: {
@@ -84,9 +83,9 @@ module.exports = function (grunt) {
       }
     },
     clean: ['public']
-});
+  });
 
-grunt.registerTask('build', ['clean', 'copy', 'sass', 'jade']);
-grunt.registerTask('serve', ['build', 'connect:server', 'watch']);
-grunt.registerTask('default', []);
+  grunt.registerTask('build', ['clean', 'copy', 'sass', 'jade']);
+  grunt.registerTask('serve', ['build', 'connect:server', 'watch']);
+  grunt.registerTask('default', []);
 };
