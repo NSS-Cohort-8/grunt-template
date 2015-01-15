@@ -2,10 +2,12 @@
 
 1. Create new project on Github. Do not initialize with a Readme, gitignore, or a License.
 2. Make a directory on your local machine for the project.
-3. copy all files from this template into the project directory.
+3. Copy all files from this template into the project directory.
     * `cp -r c8-grunt-template/ new-project`
-4. `npm init` and `bower init`
-5. Add npm dependencies to the `package.json` file and then run `npm install`
+4. Delete the `.git` directory in the new-project that was copied in the prior step.
+    * `rm -rf new-project/.git`
+5. `npm init` and `bower init`
+6. Add npm dependencies to the `package.json` file and then run `npm install`
 
     ```json
     "devDependencies": {
@@ -20,9 +22,9 @@
     }
     ```
 
-6. Install and save any bower dependencies to your project
+7. Install and save any bower dependencies to your project
     ```bash
     bower install angular jquery bootstrap --save
     ```
 
-7. Run `grunt serve` to load the web server
+8. Run `grunt serve` to load the web server
